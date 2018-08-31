@@ -11,7 +11,27 @@ function paintMixer(color1, color2) {
   The order of the params should not matter.
   */
   // PLACE YOUR CODE BELOW
-
+  let colorMap = {
+    blue: 10,
+    red: 20,
+    green: 3,
+    yellow: 4,
+  }
+  let color;
+  switch(colorMap[color1] + colorMap[color2]) {
+    case 30:
+      color = 'purple'
+      break;
+    case 23:
+      color = 'brown'
+      break;
+    case 14:
+      color = 'green'
+      break;
+    default:
+      color = 'unknown'
+  }
+  return color;
   // PLACE YOUR CODE ABOVE
 }
 

@@ -21,7 +21,8 @@ Place your code that does all of this below this comment block, and
 before the next comment block.
 */
 // PLACE YOUR CODE BELOW
-
+wordList = words.map(word => word.substring(1,3));
+wordList = wordList.join(', ');
 // PLACE YOUR CODE ABOVE
 /*
 When run with "node 1_strings.js" you should see the following on
